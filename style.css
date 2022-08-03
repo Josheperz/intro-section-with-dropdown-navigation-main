@@ -25,6 +25,9 @@ color: black;
 ul {
   list-style: none;
 }
+.not-visible {
+  display: none;
+}
 
 /* header */
 nav {
@@ -34,10 +37,88 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 20px 14px;
-  margin-bottom: 5px;
+ position: relative;
 }
 header nav ul li img {
   cursor: pointer;
+}
+/*Menu mobile*/
+header .menu-mobile-container_sombra {
+  height: 100vh;
+  max-width: 375px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #2f2f2cb8;
+  z-index: 1;
+  
+}
+header .menu-mobile-container_main {
+  width: 239px;
+  background: white;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  z-index: 1;
+}
+header .menu-mobile-container_main .icon-close-menu img {
+width: 20px;
+cursor: pointer;
+}
+header .menu-mobile-container_main .icon-close-menu {
+  text-align: end;
+  margin: 20px 16px 29px;
+}
+header .menu-mobile-container_main .list-menu {
+  padding-left:18px ;
+}
+header .menu-mobile-container_main .list-menu .icon-arrow {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-left: 7px;
+  cursor: pointer;
+
+}
+header .menu-mobile-container_main .list-menu .icon_down {
+  background-image: url(./images/icon-arrow-down.svg);
+}
+.icon_up {
+  background-image: url(./images/icon-arrow-up.svg);
+  display: none;
+}
+header .menu-mobile-container_main .list-menu .item-menu {
+  margin: 16px 0;
+  font-size: 1.2rem;
+}
+header .menu-mobile-container_main .list-menu .sub_menu {
+  padding-left: 26px;
+  display: flex;
+  font-size: 1.2rem;
+  align-items: center;
+}
+header .menu-mobile-container_main .list-menu .sub_menu img {
+margin-right: 10px;
+}
+header .menu-mobile-container_main .text_login {
+  margin-left: 76px;
+  margin-top: 20px;
+  
+}
+header .menu-mobile-container_main .botton_register {
+  width: 130px;
+  height: 32px;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--medium-gray);
+  border: 1px solid var(--medium-gray);
+  border-radius: 9px;
+  padding-top: 8px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 .main-article {
