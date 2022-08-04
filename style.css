@@ -31,17 +31,18 @@ ul {
 
 /* header */
 nav {
-  width: 100%;
-  max-width: 375px;
+  width: 375px;
+  
   height: auto;
   display: flex;
   justify-content: space-between;
   padding: 20px 14px;
  position: relative;
 }
-header nav ul li img {
+ header nav .nav-right_menu .icon-menu  {
   cursor: pointer;
-}
+ } 
+
 /*Menu mobile*/
 header .menu-mobile-container_sombra {
   height: 100vh;
@@ -72,7 +73,7 @@ header .menu-mobile-container_main .icon-close-menu {
 header .menu-mobile-container_main .list-menu {
   padding-left:18px ;
 }
-header .menu-mobile-container_main .list-menu .icon-arrow {
+header .icon-arrow {
   display: inline-block;
   width: 7px;
   height: 7px;
@@ -83,16 +84,17 @@ header .menu-mobile-container_main .list-menu .icon-arrow {
   cursor: pointer;
 
 }
-header .menu-mobile-container_main .list-menu .icon_down {
+header .icon_down {
   background-image: url(./images/icon-arrow-down.svg);
 }
 .icon_up {
   background-image: url(./images/icon-arrow-up.svg);
   display: none;
 }
-header .menu-mobile-container_main .list-menu .item-menu {
+header .item-menu {
   margin: 16px 0;
   font-size: 1.2rem;
+  
 }
 header .menu-mobile-container_main .list-menu .sub_menu {
   padding-left: 26px;
@@ -193,4 +195,35 @@ footer ul li .footer-maker {
   background-image: url(./images/client-maker.svg);
   width: 62px;
 }
-	
+
+@media (min-width: 376px){
+  .icon-menu {
+    display: none;
+  }
+  header nav ul li img {
+  width: 54px;
+  }
+  header nav .nav-menu-desktop {
+    display: flex;
+    gap: 38px;
+    margin-left: 52px;
+  }
+  .menu-desktop_arrow {
+    display: flex;
+  }
+  header nav .nav-menu-destop li {
+    cursor: pointer;
+  }
+  header .icon-arrow {
+    background-position: bottom;
+  }
+  header .item-menu {
+    margin: 0;
+  }
+  header .list-men {
+    position: relative;
+    top: 20px;
+    left: 150px;
+    display: inline-block;
+  }
+}
