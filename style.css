@@ -91,12 +91,20 @@ header .icon_down {
  
 }
 header .item-menu {
+  color: var(--medium-gray);
   margin: 16px 0;
   font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
   
 }
+.menu_features,
+.menu_company {
+  margin: 25px 0;
+}
+
+
+
 header .menu-mobile-container_main .list-menu .sub_menu {
   padding-left: 26px;
   display: flex;
@@ -207,6 +215,7 @@ footer ul li .footer-maker {
   width: 62px;
 }
 
+
 @media (min-width: 376px){
   .icon-menu {
     display: none;
@@ -220,7 +229,7 @@ footer ul li .footer-maker {
   }
   header nav .nav-menu-desktop {
     display: flex;
-    gap: 25px;
+    gap: 40px;
     width: 511px;
   }
   .menu-desktop_arrow {
@@ -273,11 +282,44 @@ footer ul li .footer-maker {
   header .nav-right_desktop .botton_register:hover {
     border: 1px solid var(--almost-black);
   }
+
+  nav .sub_desktop-feauture img {
+    width: 10px;
+    margin-right: 12px;
+    
+  }
+  nav .sub_desktop-feauture {
+    margin-bottom: 10px;
+    display: flex;
+    font-size: 1.2rem;
+    align-items: flex-start;;
+    
+  }
+  .sub_features {
+    position: absolute;
+    top: 39px;
+    padding: 13px 17px 3px 17px;
+    left: 79px;
+    border-radius: 8px;
+    box-shadow: 0px 14px 150px -21px var(--medium-gray);
+    background: var(--almost-white);
+  }
+  .sub_company {
+    position: absolute;
+    top: 39px;
+    padding: 13px 17px 3px 17px;
+    left: 233px;
+    border-radius: 8px;
+    box-shadow: 0px 14px 150px -21px var(--medium-gray);
+    background: var(--almost-white);
+  }
+  
+
   section {
     display: flex;
     margin: 0 auto;
     width: 900px;
-    gap: 72px;
+    gap: 42px;
     flex-direction: row-reverse;
   }
   .figure-mobile {
@@ -309,7 +351,7 @@ footer ul li .footer-maker {
 
   }
   .main-article {
-    width: 48%;
+    width: 42%;
     position: static;
   }
   section div p {
@@ -346,6 +388,12 @@ footer ul li .footer-maker {
     display: none;
   }
   section .main-article .article-parrafo_desktop{
+    display: none;
+  }
+  nav .sub_features {
+    display: none;
+  }
+  nav .sub_company {
     display: none;
   }
 }
