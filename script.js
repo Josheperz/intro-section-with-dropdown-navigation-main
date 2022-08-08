@@ -99,6 +99,9 @@ if (arrowDown){
   divFeatures.classList.remove('icon_down');
   divFeatures.classList.add('icon_up');
   subFeatures.classList.toggle('not-visible');
+
+  subCompany.classList.add('not-visible');
+  divCompany.classList.add('icon_down');
   }else {
     divFeatures.classList.remove('icon_up');
     divFeatures.classList.add('icon_down');
@@ -113,6 +116,9 @@ function showmenuDesktopCompany(){
     divCompany.classList.remove('icon_down');
     divCompany.classList.add('icon_up');
     subCompany.classList.toggle('not-visible');
+
+    subFeatures.classList.add('not-visible');
+    divFeatures.classList.add('icon_down');
     }else {
       divCompany.classList.remove('icon_up');
       divCompany.classList.add('icon_down');
